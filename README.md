@@ -1,9 +1,11 @@
-# ruby-cli-template
 
-Use this repository as a template for your Ruby CLI (command line interface) project.
-
-- Ruby version: `3.2.1`
+Welcome to my hangman cli project
 
 
-I wanted to have fun with this, since I already have a little knowledge with C/C++ I wanted to recreate my hangman project I did a long time ago in ruby
-to see if im fully grasping the language
+## Installation
+
+To get started, clone the repository to your local machine:
+
+
+
+run bundle to get all the libraries for this project and then run "ruby main.rb" to play the game
