@@ -1,7 +1,7 @@
 require './hangman.rb'
 
 def prompt(message)
-  pp "#{message} "
+  puts "#{message} "
   gets.chomp
 end
 
