@@ -4,6 +4,6 @@ class Hangman
   def initialize(word, max_attempts = 6)
     @word = word.downcase
     @max_attempts = max_attempts
-    @guessess = []
+    @guesses = []
   end
 end
