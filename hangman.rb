@@ -30,5 +30,20 @@ class Hangman
     end
     display.join(' ')
   end
+  
+  def remaining_attempts
+    # Calculate how many guesses are left
+    @max_attempts - wrong_guesses_count
+  end
+
+  def wrong_guesses_count
+    # Count how many guesses were wrong
+    @guesses.reject { |g| @word.include?(g) }.size
+  end
+
+  def won?
+    # Check if all letters in the word have been guessed
+    (@word.chars - @guesses).empty?
+  end
 
 end
