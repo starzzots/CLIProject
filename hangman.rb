@@ -11,5 +11,12 @@ class Hangman
     @guesses.include?(letter.downcase)
   end
 
+  def add_guess(letter)
+    #if guess isnt true add to guesses array
+    letter = letter.downcase
+    unless guess(letter)
+      @guesses << letter
+    end
+  end
 
 end
