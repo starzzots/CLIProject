@@ -6,4 +6,10 @@ class Hangman
     @max_attempts = max_attempts
     @guesses = []
   end
+  
+  def guess(letter)
+    @guesses.include?(letter.downcase)
+  end
+
+
 end

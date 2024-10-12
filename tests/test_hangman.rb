@@ -11,4 +11,10 @@ class TestHangman < Minitest::Test
     assert_equal [], @game.guesses # Check that guesses start as an empty array
     assert_equal 6, @game.max_attempts # Check that the max attempts are set to 6
   end
+
+  def test_guess
+    @game.add_guess("t")
+    assert_equal true, @game.guess("t")
+    assert_equal false, @game.guess("e")
+  end
 end
