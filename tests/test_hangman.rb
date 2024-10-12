@@ -25,4 +25,12 @@ class TestHangman < Minitest::Test
     @game.add_guess("l") # Guessing "t" again
     assert_equal ["l", "e"], @game.guesses # should remain unchanged
   end
+
+  def test_display_word
+    @game.add_guess("t")
+    result = @game.display_word
+    expected = "t _ _ t"
+
+    assert_equal expected, result
+  end
 end

@@ -18,5 +18,17 @@ class Hangman
       @guesses << letter
     end
   end
+  
+  def display_word
+    display = []
+    @word.chars.each do |char|
+      if guess(char)
+        display << char
+      else
+        display << '_'
+      end
+    end
+    display.join(' ')
+  end
 
 end
