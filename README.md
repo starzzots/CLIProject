@@ -19,7 +19,7 @@ This is a command-line implementation of the classic Hangman game. In this game:
 
 1. Ensure you have Ruby installed on your machine.
 2. Clone the repository or download the source code.
-3. Make sure the `hangman.rb` file is in the same directory as your main game file.
+3. Make sure the `main.rb` file is in the same directory as your hangman file.
 
 ## Usage
 
