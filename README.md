@@ -26,4 +26,4 @@ This is a command-line implementation of the classic Hangman game. In this game:
 Run the game using:
 
 ```bash
-ruby hangman.rb
+ruby main.rb
